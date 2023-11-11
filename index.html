@@ -36,23 +36,20 @@
     </style>
     <script type="text/javascript">
         function sayHello() {
-            window.location.href = "uniwebview://hello"
+            window.location.href = "uniwebview://action?x=10&y=20"
         }
         function performClose() {
-            window.location.href = "uniwebview://close"
+            window.location.href = "uniwebview://action?x=10&y=20"
         }
     </script>
 </head>
 <body>
-
     <div class="container">
         <div class="center">
-            <h2>This is a full screen web view</h2>
-            <button class="button" onclick="sayHello()">Set Sample Text</button>
-            <button class="button button-close" onclick="performClose()">Close From Web</button>
+            <h2>This is a full screen transparent web view</h2>
+            <button class="button" onclick="sayHello()">Transform Change</button>
+            <button class="button button-close" onclick="performClose()">Transform Change</button>
         </div>
     </div>
-    
 </body>
 </html>
-
