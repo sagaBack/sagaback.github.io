@@ -35,24 +35,27 @@
         }
     </style>
     <script type="text/javascript">
-        function updateTicks() {
-            window.location.href = "uniwebview://updateTicks?value=360"
+        function updateLocationX()
+        {
+            window.location.href = "uniwebview://updateX?value=360"
         }
-        function updateDay() {
-            window.location.href = "uniwebview://updateDay?value=0"
+        function updateLocationY()
+        {
+            window.location.href = "uniwebview://updateY?value=360"
         }
-        function updateYear() {
-            window.location.href = "uniwebview://updateYear?value=2021"
+        function changeMusicList()
+        {
+            window.location.href = "uniwebview://musicChange?path=" + encodeURIComponent("Music/MusicListA");
         }
     </script>
 </head>
 <body>
     <div class="container">
         <div class="center">
-            <h2>CozyWeather & UniWebView Button Test</h2>
-            <button class="button">Update Ticks</button>
-            <button class="button">Update Day</button>
-            <button class="button">Update Year</button>
+            <h2>UniWebView Button Test</h2>
+            <button class="button">Update X</button>
+            <button class="button">Update Y</button>
+            <button class="button">Update Music List</button>
         </div>
     </div>
 </body>
