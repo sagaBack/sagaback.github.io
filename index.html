@@ -35,14 +35,6 @@
         }
     </style>
     <script type="text/javascript">
-        function updateLocationX()
-        {
-            window.location.href = "uniwebview://updateX?value=360"
-        }
-        function updateLocationY()
-        {
-            window.location.href = "uniwebview://updateY?value=360"
-        }
         function changeMusicListA()
         {
             window.location.href = "uniwebview://musicChange?path=" + encodeURIComponent("Music/MusicListA");
@@ -55,17 +47,30 @@
         {
             window.location.href = "uniwebview://musicChange?path=" + encodeURIComponent("Music/MusicListC");
         }
+        function pauseMusic()
+        {
+            window.location.href = "uniwebview://pauseMusic?value=1";
+        }
+        function previousMusic()
+        {
+            window.location.href = "uniwebview://previousMusic?value=1";
+        }
+        function nextMusic()
+        {
+            window.location.href = "uniwebview://nextMusic?value=1";
+        }
     </script>
 </head>
 <body>
     <div class="container">
         <div class="center">
-            <h2>UniWebView Button Test New</h2>
-            <button class="button" onclick="updateLocationX()">Update X</button>
-            <button class="button" onclick="updateLocationY()">Update Y</button>
-            <button class="button" onclick="changeMusicListA()">Update Music List A</button>
-            <button class="button" onclick="changeMusicListB()">Update Music List B</button>
-            <button class="button" onclick="changeMusicListC()">Update Music List C</button>
+            <h2>UniWebView Button Test</h2>
+            <button class="button" onclick="changeMusicListA()">Music List A</button>
+            <button class="button" onclick="changeMusicListB()">Music List B</button>
+            <button class="button" onclick="changeMusicListC()">Music List C</button>
+            <button class="button" onclick="pauseMusic()">Pause Music</button>
+            <button class="button" onclick="previousMusic()">Previous Music</button>
+            <button class="button" onclick="nextMusic()">Next Music</button>
         </div>
     </div>
 </body>
