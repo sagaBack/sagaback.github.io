@@ -68,8 +68,8 @@
             var urlString = "uniwebview://currentTicks?value=" + sliderValue;
             // 这里可以使用window.location.href改变URL，但在这个演示中可能不起作用。
             // 在实际的 WebView 中，确保这个URL可以正确地发送给 WebView。
-            console.log(urlString); // 打印URL（仅用于演示）
-            // window.location.href = urlString; // 实际WebView中使用的代码
+            // console.log(urlString); // 打印URL（仅用于演示）
+            window.location.href = urlString; // 实际WebView中使用的代码
         }
     </script>
 </head>
@@ -83,9 +83,11 @@
             <button class="button" onclick="pauseMusic()">Start/Pause</button>
             <button class="button" onclick="previousMusic()">Previous Music</button>
             <button class="button" onclick="nextMusic()">Next Music</button>
+        </div>
+        <div class="center">
             <input type="range" min="0" max="360" value="0" class="slider" id="ticksSlider" onchange="updateTicksValue(this.value)">
             <p>当前数值: <span id="ticksValue">0</span></p>
-            <button class="button" onclick="changeCurrentTicks()">Set Time</button>
+            <button class="button" onclick="changeCurrentTicks()">Confirm</button>
         </div>
     </div>
 </body>
