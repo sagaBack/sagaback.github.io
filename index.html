@@ -16,7 +16,7 @@
             background-color: #4CAF50;
             border: none;
             color: white;
-            padding: 15px 32px;
+            padding: 5px 10px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
@@ -83,11 +83,11 @@
             <button class="button" onclick="pauseMusic()">Start/Pause</button>
             <button class="button" onclick="previousMusic()">Previous Music</button>
             <button class="button" onclick="nextMusic()">Next Music</button>
-        </div>
-        <div class="center">
-            <input type="range" min="0" max="360" value="0" class="slider" id="ticksSlider" onchange="updateTicksValue(this.value)">
-            <p>当前数值: <span id="ticksValue">0</span></p>
-            <button class="button" onclick="changeCurrentTicks()">Confirm</button>
+            <div class="center">
+                <input type="range" min="0" max="360" value="0" class="slider" id="ticksSlider" onchange="updateTicksValue(this.value)">
+                <p>当前数值: <span id="ticksValue">0</span></p>
+                <button class="button" onclick="changeCurrentTicks()">Confirm</button>
+            </div>
         </div>
     </div>
 </body>
