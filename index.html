@@ -35,22 +35,6 @@
         }
     </style>
     <script type="text/javascript">
-        function changeWeatherProfile()
-        {
-            window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Mostly Cloudy");
-        }
-        function changeWeatherProfile()
-        {
-            window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Light Rain");
-        }
-        function changeWeatherProfile()
-        {
-            window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Heavy Snow");
-        }
-        function changeWeatherProfile()
-        {
-            window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Thunder Storm");
-        }
         function changeMusicListA()
         {
             window.location.href = "uniwebview://musicChange?path=" + encodeURIComponent("Music/MusicListA");
@@ -93,23 +77,35 @@
             // console.log(urlString); // 打印URL（仅用于演示）
             window.location.href = urlString; // 实际WebView中使用的代码
         }
+        function changeWeatherProfile()
+        {
+            window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Mostly Cloudy");
+        }
+        function changeWeatherProfile()
+        {
+            window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Light Rain");
+        }
+        function changeWeatherProfile()
+        {
+            window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Heavy Snow");
+        }
+        function changeWeatherProfile()
+        {
+            window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Thunder Storm");
+        }
     </script>
 </head>
 <body>
     <div class="container">
         <div class="center">
-            <h2>UniWebView Test</h2>
-            <button class="button" onclick="changeWeatherProfile()">Mostly Cloudy</button>
-            <button class="button" onclick="changeWeatherProfile()">Light Rain</button>
-            <button class="button" onclick="changeWeatherProfile()">Heavy Snow</button>
-            <button class="button" onclick="changeWeatherProfile()">Thunder Storm</button>
-            <p></p>
+            <h2>Music Play Test</h2>
             <button class="button" onclick="changeMusicListA()">Music List A</button>
             <button class="button" onclick="changeMusicListB()">Music List B</button>
             <button class="button" onclick="changeMusicListC()">Music List C</button>
             <button class="button" onclick="pauseMusic()">Start/Pause</button>
             <button class="button" onclick="previousMusic()">Previous Music</button>
             <button class="button" onclick="nextMusic()">Next Music</button>
+            <h2>Day/Season Test</h2>
             <p>Day Ticks: <span id="ticksValue">0</span></p>
             <!--Float，0到360-->
             <input type="range" min="0" max="360" value="0" class="slider" id="ticksSlider" onchange="updateTicksValue(this.value)">
@@ -118,6 +114,11 @@
             <!--Int，0到47-->
             <input type="range" min="0" max="47" value="0" class="slider" id="daySlider" onchange="updateDayValue(this.value)">
             <button class="button" onclick="changeCurrentDay()">Confirm</button>
+            <h2>Weather Test</h2>
+            <button class="button" onclick="changeWeatherProfile()">Mostly Cloudy</button>
+            <button class="button" onclick="changeWeatherProfile()">Light Rain</button>
+            <button class="button" onclick="changeWeatherProfile()">Heavy Snow</button>
+            <button class="button" onclick="changeWeatherProfile()">Thunder Storm</button>
         </div>
     </div>
 </body>
