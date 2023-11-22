@@ -37,6 +37,18 @@
     <script type="text/javascript">
         function changeWeatherProfile()
         {
+            window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Mostly Cloudy");
+        }
+        function changeWeatherProfile()
+        {
+            window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Light Rain");
+        }
+        function changeWeatherProfile()
+        {
+            window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Heavy Snow");
+        }
+        function changeWeatherProfile()
+        {
             window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Thunder Storm");
         }
         function changeMusicListA()
@@ -87,7 +99,11 @@
     <div class="container">
         <div class="center">
             <h2>UniWebView Test</h2>
+            <button class="button" onclick="changeWeatherProfile()">Mostly Cloudy</button>
+            <button class="button" onclick="changeWeatherProfile()">Light Rain</button>
+            <button class="button" onclick="changeWeatherProfile()">Heavy Snow</button>
             <button class="button" onclick="changeWeatherProfile()">Thunder Storm</button>
+            <p></p>
             <button class="button" onclick="changeMusicListA()">Music List A</button>
             <button class="button" onclick="changeMusicListB()">Music List B</button>
             <button class="button" onclick="changeMusicListC()">Music List C</button>
