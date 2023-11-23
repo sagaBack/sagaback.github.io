@@ -101,6 +101,14 @@
         {
             window.location.href = "uniwebview://characterSwitch?index=" + encodeURIComponent(1);
         }
+        function ambienceSoundOn()
+        {
+            window.location.href = "uniwebview://maximumVolume?value=1";
+        }
+        function ambienceSoundOff()
+        {
+            window.location.href = "uniwebview://maximumVolume?value=0";
+        }
 </script>
 </head>
 <body>
@@ -128,8 +136,11 @@
             <button class="button" onclick="changeWeatherProfileHeavySnow()">Heavy Snow</button>
             <button class="button" onclick="changeWeatherProfileThunderStorm()">Thunder Storm</button>
             <h2>Character Switch Test</h2>
-            <button class="button" onclick="switchCharFemale0001()">Female 0001</button>
-            <button class="button" onclick="switchCharMale0001()">Male 0001</button>
+            <button class="button" onclick="switchCharFemale0001()">Xiao Mei</button>
+            <button class="button" onclick="switchCharMale0001()">Xiao Shuai</button>
+            <h2>Ambience Sound Test</h2>
+            <button class="button" onclick="ambienceSoundOn()">Sound On</button>
+            <button class="button" onclick="ambienceSoundOff()">Sound Off</button>
         </div>
     </div>
 </body>
