@@ -77,19 +77,19 @@
             // console.log(urlString); // 打印URL（仅用于演示）
             window.location.href = urlString; // 实际WebView中使用的代码
         }
-        function changeWeatherProfile()
+        function changeWeatherProfileMostlyCloudy()
         {
             window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Mostly Cloudy");
         }
-        function changeWeatherProfile()
+        function changeWeatherProfileLightRain()
         {
             window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Light Rain");
         }
-        function changeWeatherProfile()
+        function changeWeatherProfileHeavySnow()
         {
             window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Heavy Snow");
         }
-        function changeWeatherProfile()
+        function changeWeatherProfileThunderStorm()
         {
             window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Thunder Storm");
         }
@@ -115,10 +115,10 @@
             <input type="range" min="0" max="47" value="0" class="slider" id="daySlider" onchange="updateDayValue(this.value)">
             <button class="button" onclick="changeCurrentDay()">Confirm</button>
             <h2>Weather Test</h2>
-            <button class="button" onclick="changeWeatherProfile()">Mostly Cloudy</button>
-            <button class="button" onclick="changeWeatherProfile()">Light Rain</button>
-            <button class="button" onclick="changeWeatherProfile()">Heavy Snow</button>
-            <button class="button" onclick="changeWeatherProfile()">Thunder Storm</button>
+            <button class="button" onclick="changeWeatherProfileMostlyCloudy()">Mostly Cloudy</button>
+            <button class="button" onclick="changeWeatherProfileLightRain()">Light Rain</button>
+            <button class="button" onclick="changeWeatherProfileHeavySnow()">Heavy Snow</button>
+            <button class="button" onclick="changeWeatherProfileThunderStorm()">Thunder Storm</button>
         </div>
     </div>
 </body>
