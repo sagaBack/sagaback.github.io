@@ -93,7 +93,15 @@
         {
             window.location.href = "uniwebview://weatherChange?path=" + encodeURIComponent("Profiles/Weather Profiles/Thunder Storm");
         }
-    </script>
+        function switchCharFemale0001(characterIndex)
+        {
+            window.location.href = "uniwebview://characterSwitch?index=" + encodeURIComponent(0);
+        }
+        function switchCharMale0001(characterIndex)
+        {
+            window.location.href = "uniwebview://characterSwitch?index=" + encodeURIComponent(1);
+        }
+</script>
 </head>
 <body>
     <div class="container">
@@ -119,6 +127,9 @@
             <button class="button" onclick="changeWeatherProfileLightRain()">Light Rain</button>
             <button class="button" onclick="changeWeatherProfileHeavySnow()">Heavy Snow</button>
             <button class="button" onclick="changeWeatherProfileThunderStorm()">Thunder Storm</button>
+            <h2>Character Switch Test</h2>
+            <button class="button" onclick="switchCharFemale0001()">Female 0001</button>
+            <button class="button" onclick="switchCharMale0001()">Male 0001</button>
         </div>
     </div>
 </body>
