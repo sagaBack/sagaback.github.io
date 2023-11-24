@@ -115,7 +115,6 @@
             // 如果value是0或1，在发送之前不需要对其进行映射
             window.location.href = "uniwebview://setWeatherFXVolume?value=" + value;
         }
-
         // 控制 Music 音效
         function setMusicVolume(value)
         {
@@ -127,14 +126,14 @@
 <body>
     <div class="container">
         <div class="center">
-            <h2>Music Play Test</h2>
+            <h4>Music Play Test</h4>
             <button class="button" onclick="changeMusicListA()">Music List A</button>
             <button class="button" onclick="changeMusicListB()">Music List B</button>
             <button class="button" onclick="changeMusicListC()">Music List C</button>
             <button class="button" onclick="pauseMusic()">Start/Pause</button>
             <button class="button" onclick="previousMusic()">Previous Music</button>
             <button class="button" onclick="nextMusic()">Next Music</button>
-            <h2>Day/Season Test</h2>
+            <h4>Day/Season Test</h4>
             <p>Day Ticks: <span id="ticksValue">0</span></p>
             <!--Float，0到360-->
             <input type="range" min="0" max="360" value="0" class="slider" id="ticksSlider" onchange="updateTicksValue(this.value)">
@@ -143,18 +142,18 @@
             <!--Int，0到47-->
             <input type="range" min="0" max="47" value="0" class="slider" id="daySlider" onchange="updateDayValue(this.value)">
             <button class="button" onclick="changeCurrentDay()">Confirm</button>
-            <h2>Weather Test</h2>
+            <h4>Weather Test</h4>
             <button class="button" onclick="changeWeatherProfileMostlyCloudy()">Mostly Cloudy</button>
             <button class="button" onclick="changeWeatherProfileLightRain()">Light Rain</button>
             <button class="button" onclick="changeWeatherProfileHeavySnow()">Heavy Snow</button>
             <button class="button" onclick="changeWeatherProfileThunderStorm()">Thunder Storm</button>
-            <h2>Character Switch Test</h2>
+            <h4>Character Switch Test</h4>
             <button class="button" onclick="switchCharFemale0001()">Xiao Mei</button>
             <button class="button" onclick="switchCharMale0001()">Xiao Shuai</button>
-            <h2>Ambience Sound Test</h2>
+            <h4>Ambience Sound Test</h4>
             <button class="button" onclick="ambienceSoundOn()">Sound On</button>
             <button class="button" onclick="ambienceSoundOff()">Sound Off</button>
-            <h2>Mixer Sound Test</h2>
+            <h4>Mixer Sound Test</h4>
             <button class="button" onclick="setWeatherFXVolume(1)">Sound On</button>
             <button class="button" onclick="setWeatherFXVolume(0)">Sound Off</button>
             <button class="button" onclick="setMusicVolume(1)">Music On</button>
