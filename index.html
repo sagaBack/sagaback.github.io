@@ -109,6 +109,16 @@
         {
             window.location.href = "uniwebview://maximumVolume?value=0";
         }
+        // 控制 Weather FX 音效
+        function setWeatherFXVolume(value)
+        {
+            window.location.href = "uniwebview://setWeatherFXVolume?value=" + value;
+        }
+        // 控制 Music 音效
+        function setMusicVolume(value)
+        {
+            window.location.href = "uniwebview://setMusicVolume?value=" + value;
+        }
 </script>
 </head>
 <body>
@@ -141,6 +151,11 @@
             <h2>Ambience Sound Test</h2>
             <button class="button" onclick="ambienceSoundOn()">Sound On</button>
             <button class="button" onclick="ambienceSoundOff()">Sound Off</button>
+            <h2>Mixer Sound Test</h2>
+            <button class="button" onclick="setWeatherFXVolume(0)">Sound On</button>
+            <button class="button" onclick="setWeatherFXVolume(-80)">Sound Off</button>
+            <button class="button" onclick="setMusicVolume(0)">Sound On</button>
+            <button class="button" onclick="setMusicVolume(-80)">Sound Off</button>
         </div>
     </div>
 </body>
