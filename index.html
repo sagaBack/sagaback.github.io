@@ -112,11 +112,14 @@
         // 控制 Weather FX 音效
         function setWeatherFXVolume(value)
         {
+            // 如果value是0或1，在发送之前不需要对其进行映射
             window.location.href = "uniwebview://setWeatherFXVolume?value=" + value;
         }
+
         // 控制 Music 音效
         function setMusicVolume(value)
         {
+            // 如果value是0或1，在发送之前不需要对其进行映射
             window.location.href = "uniwebview://setMusicVolume?value=" + value;
         }
 </script>
@@ -152,10 +155,10 @@
             <button class="button" onclick="ambienceSoundOn()">Sound On</button>
             <button class="button" onclick="ambienceSoundOff()">Sound Off</button>
             <h2>Mixer Sound Test</h2>
-            <button class="button" onclick="setWeatherFXVolume(0)">Sound On</button>
-            <button class="button" onclick="setWeatherFXVolume(-80)">Sound Off</button>
-            <button class="button" onclick="setMusicVolume(0)">Sound On</button>
-            <button class="button" onclick="setMusicVolume(-80)">Sound Off</button>
+            <button class="button" onclick="setWeatherFXVolume(1)">Sound On</button>
+            <button class="button" onclick="setWeatherFXVolume(0)">Sound Off</button>
+            <button class="button" onclick="setMusicVolume(1)">Sound On</button>
+            <button class="button" onclick="setMusicVolume(0)">Sound Off</button>
         </div>
     </div>
 </body>
